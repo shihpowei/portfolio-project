@@ -78,10 +78,139 @@ main section.right {
 main section.right img {
   border-radius: 50%;
   width: 25VW;
-  height: 25VW;
   position: absolute;
-  top: 20vh;
+  top: 10vh;
   right: 20vw;
+}
+
+main section.table {
+  -webkit-box-flex: 5;
+      -ms-flex: 5 1 600px;
+          flex: 5 1 600px;
+  padding: 2rem;
+}
+
+main section.table table {
+  border-collapse: collapse;
+}
+
+main section.table tr {
+  border-bottom: 2px solid gray;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+
+main section.table tr td {
+  padding: 1rem;
+}
+
+main section.table tr:hover {
+  background-color: #f5b591;
+}
+
+main section.picture {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 500px;
+          flex: 1 1 500px;
+  position: relative;
+}
+
+main section.picture img {
+  width: 30vw;
+}
+
+main section.picture div.orangeRect {
+  background-color: #E08958;
+  width: 30vw;
+  height: 90vh;
+  position: absolute;
+  top: 30px;
+  left: 80px;
+  z-index: -1;
+}
+
+main section.form {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 600px;
+          flex: 1 1 600px;
+}
+
+main section.form form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  min-height: 70vh;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 1.5rem;
+}
+
+main section.form form div {
+  margin: 0.5rem;
+}
+
+main section.form form div label {
+  font-size: 1.5rem;
+  margin-right: 1rem;
+}
+
+main section.form form div input,
+main section.form form div textarea {
+  background-color: #ffb990;
+  color: white;
+  font-size: 1.25rem;
+  padding: 0.5rem .25rem;
+  border: none;
+  width: 70vh;
+}
+
+main section.form form div textarea {
+  vertical-align: top;
+}
+
+main section.form form button {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  background-color: #E08958;
+  color: white;
+  cursor: pointer;
+  border: none;
+  padding: 0.75rem 2rem;
+  font-size: 2rem;
+  border-radius: 70px;
+}
+
+main section.contact {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 500px;
+          flex: 1 1 500px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main section.contact div.content {
+  padding: 1.5rem;
+}
+
+main section.contact div.content h2 {
+  margin: 2rem 0;
+}
+
+main div.line {
+  background-color: gray;
+  width: 3px;
 }
 
 footer a {
@@ -123,8 +252,32 @@ footer a {
     width: 50VW;
     height: 50vw;
   }
+  main section.picture {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    position: relative;
+  }
+  main section.picture img {
+    width: 50vw;
+  }
+  main section.picture div.orangeRect {
+    display: none;
+  }
   .orange {
     opacity: 0.5;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  main section.form form div input, main section.form form div textarea {
+    width: 85vw;
   }
 }
 /*# sourceMappingURL=style.css.map */
